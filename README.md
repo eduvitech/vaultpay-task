@@ -50,3 +50,18 @@ Push your solution to GitHub and send the repository URL. Include:
 - Completed code and passing tests
 - A UI screenshot in the repo (e.g. `screenshot.png`)
 - Setup notes in your README
+
+## Setup Notes
+
+- Install dependencies from the repo root with `npm install`.
+- Compile and test the contracts with `npm run compile` and `npm run test`.
+- Start the local blockchain with `npm run node` and keep that terminal open.
+- Deploy the local contracts with `npm run deploy:local` after the node is running.
+- Copy the printed `TOKEN_ADDRESS` and `VAULTPAY_ADDRESS` into `frontend/src/config.ts`.
+- Start the frontend with `cd frontend && npm install && npm run dev`.
+- In MetaMask, add the local network:
+  - RPC URL: `http://127.0.0.1:8545`
+  - Chain ID: `31337`
+- Import one of the Hardhat test accounts using the private key printed by `npm run node`.
+- Use the UI to faucet, approve, create, claim, or cancel a payment.
+- Save a working browser screenshot in the repo as `screenshot.png`.
